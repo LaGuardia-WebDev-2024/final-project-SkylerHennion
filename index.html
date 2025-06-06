@@ -17,96 +17,94 @@ Select ONE Additional Feature to Add
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project</title>
+    <title>Skyler Hennion</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
 
-        /* Set a specific height */
-        min-height: 500px;
+      #aboutmecontent {
+        margin-top: 60px;
+        margin-bottom: 50px;
+      }
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
-      }
-      .parent-flex {
-        display: flex;
-      }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
-        padding: 10px;
+      p {
         text-align: justify;
-        width: 40%;
-      }
-      .para-1{
-        display: flex;
-        align-items: center;
       }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
+
+    <div class="navbarcontainer">
+      <ul class="nav">
+        <li>
+          <a
+            id="skyler"
+            style="font-family: littlebird; font-size: 20px; padding-top: 8px"
+            >Skyler Hennion</a
+          >
+        </li>
+        <li style="float: right"><a href="resume.html">Resume</a></li>
+        <li style="float: right"><a href="garments.html">Garments</a></li>
+        <li style="float: right"><a href="art.html">Art & Design</a></li>
+        <li style="float: right">
+          <a class="active" href="index.html">About</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
-    <div class="parallax"></div>
 
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
+    <div
+      id="aboutmecontent"
+      style="margin: auto; width: 1000px; display: flex; align-items: flex-start"
+    >
+    <!--  <img
+        src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/74386f4fbe5a9e71094db8640fe11e8c.jpeg?v=1747969421283"
+        width="440px"
+        style="margin-top: 40px; margin-right: 40px"
+      /> -->
+      <div>
+        <h1>SKYLER HENNION</h1>
         <p>
+          Skyler Hennion is a fifth-generation New Yorker majoring in Technical
+          Theater at Fiorello H. LaGuardia High School of Music & Art and
+          Performing Arts. Set to attend Vassar College in August 2025, she
+          intends to pursue Sociolinguistics and Medieval & Renaissance Studies.
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat.
+          <br /><br />
+          From an early age, Skyler was introduced to the world of technical
+          theater through watching her mom who worked in the field as a scenic
+          artist. By third grade, she began her own career in technical theater
+          for her elementary school and continuing through middle and high
+          school. To date she has worked on twelve productions. In her four
+          years at Laguardia, she has concentrated in the building, designing,
+          and fitting of costumes, and works as a dresser during shows.
+          <br /><br />
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
           faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
           pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
           tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
           Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
           hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          per conubia nostra inceptos himenaeos
         </p>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 27) {
+            $(".navbarcontainer").addClass("scrolled");
+          } else {
+            $(".navbarcontainer").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

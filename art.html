@@ -2,65 +2,253 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project</title>
+    <title>Skyler Hennion - Art</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="lightbox.css" rel="stylesheet" type="text/css" />
+
     <style>
       /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
-      }
 
-      .parent-flex img {
-        max-width: 30%;
-        border-radius: 10px;
+      img {
+        width: 400px;
+        height: 280px;
+        object-fit: cover;
+        object-position: 25% 15%;
       }
     </style>
   </head>
   <body>
+    
+    
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
+
+    <div class="navbarcontainer">
+      <ul class="nav">
+        <li>
+          <a
+            id="skyler"
+            style="font-family: littlebird; font-size: 20px; padding-top: 8px"
+            >Skyler Hennion</a
+          >
+        </li>
+        <li style="float: right"><a href="resume.html">Resume</a></li>
+        <li style="float: right"><a href="garments.html">Garments</a></li>
+        <li style="float: right"><a class="active" href="art.html">Art & Design</a></li>
+        <li style="float: right"><a href="index.html">About</a></li>
+      </ul>
+    </div>
+
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+    <h1>ART & DESIGN</h1>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
-    </div>
+    <div class="pagecontent">
+      <!--image1-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="Acrylic paint on canvas
+3'' x 3''"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_0024.jpeg?v=1747876731129"
+          ><img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_0024.jpeg?v=1747876731129"
+            width="400px"
+            style="object-position: 25% 35%"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image1-->
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
-    </div>
+      <!--image2-->
+      <div class="pieceandcaption">
+       <a
+  href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_9276.jpeg?v=1748724293102"
+  data-lightbox="gallery"
+  data-title="Acrylic paint on canvas 1' 8'' x 1' 4''"
+  data-gallery="[&quot;https://marketplace.canva.com/EAFA7HcvCvU/1/0/1600w/canva-blue-white-abstract-color-and-style-video-background-5WjVzool7kE.jpg&quot;, &quot;https://tinyurl.com/5eku6nwd&quot;]"
+>
+  <img 
+    src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_9276.jpeg?v=1748724293102"
+    width="400px"
+  />
+</a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image2-->
+
+      <!--image3-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="Acrylic paint on board
+4'' x 6''"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_3320.jpeg?v=1748726739142"
+          ><img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_3320.jpeg?v=1748726739142"
+            width="400px"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image3-->
+
+        <!--image4-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="image caption here"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_3182.jpg?v=1747876571715"
+          ><img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_3182.jpg?v=1747876571715"
+            width="400px"
+            style="object-position: 25% 5%"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image4-->
+      
+      <!--image5-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="Latex house paint mural
+	6' 5'' x  8' 1''"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_7283.JPEG?v=1747876580492"
+        >
+          <img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_7283.JPEG?v=1747876580492"
+            width="400px"
+            style="object-position: 25% 30%"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image5-->
+
+      <!--image6-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="image caption here"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/Untitled208_20240809232137.jpg?v=1748532243136"
+          ><img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/Untitled208_20240809232137.jpg?v=1748532243136"
+            width="400px"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+      <!--image6-->
+
+      <!--image7-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="image caption here"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2132.PNG?v=1748532306889"
+        >
+          <img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2132.PNG?v=1748532306889"
+            width="400px" style="object-position: 25% 20%"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+    <!--image7-->
+
+     <!--image8-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="image caption here"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2139.jpeg?v=1748612851781"
+        >
+          <img
+            src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2139.jpeg?v=1748612851781"
+            width="400px" style="object-position: 25% 20%"
+        /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+   
+    <!--image8-->
+
+     <!--image9-->
+      <div class="pieceandcaption">
+        <a
+          data-lightbox="gallery"
+          data-title="image caption here"
+          href="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2319.jpg?v=1747967904265"
+          ><img
+          src="https://cdn.glitch.global/0b6ede30-36e8-4e73-91b8-9e47bbafdb1a/IMG_2319.jpg?v=1747967904265"
+          width="400px"
+          style="object-position: 25% 25%"
+                /></a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+          pretium tellus duis convallis.
+        </p>
+      </div>
+    <!--image9-->
+    
+     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lightbox.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 27) {
+            $(".navbarcontainer").addClass("scrolled");
+          } else {
+            $(".navbarcontainer").removeClass("scrolled");
+          }
+        });
+      });
+      
+      const images = [
+            "https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x900.jpg",
+            "https://roelfjan.github.io/object-fit-cover/example-images/example1@1200x600.jpg","https://www.calliaweb.co.uk/wp-content/uploads/2015/10/450x300.jpg"
+        ];
+
+        let currentIndex = 0;
+
+        const imgElement = document.getElementById("switchImage");
+
+        imgElement.addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+        });
+     
+      
+    </script>
   </body>
 </html>
